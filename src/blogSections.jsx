@@ -9,14 +9,13 @@ function BlogSection() {
     return (
         <div>
             <section className="blog-body">
-                {post.map( item => {
+                {post.map( item => (
                 <article>
                 <h1>{item.topic}</h1>
                 <p>{item.text}</p>
                 <span>{item.date}</span>
                 </article>
-                })}
-
+                ))}
             </section>
         </div>
     )
